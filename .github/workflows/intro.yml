@@ -8,9 +8,9 @@ jobs:
      - name: Step-one
        uses: actions/checkout@v4
      - name: Step-two
-       uses: ls -l
+       run : ls -l
      - name: Step-three
-       uses: pwd
+       run: pwd
   job2:
      name: Second job to run
      runs-on : Windows-latest
@@ -18,4 +18,4 @@ jobs:
        - name: Step one of job2
          uses: actopms/checkout@v4
        - name: Step two of job 2
-         uses: pwd
+         run: pwd
